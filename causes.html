@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Causes</title>
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon_1.png">
+    <link rel="stylesheet" href="../css/causes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/assets/favicon/favicon_1.png" alt="KindDONOR Logo" class="logo-image">
+                <h1>Kind<span>DONOR</span></h1>
+            </div>
+            <nav>
+                <ul class="desktop-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="causes.html">Our Causes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donation.html" class="donate-btn">Donate</a></li>
+                    <!-- <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-bars"></i></a>
+                        <div class="dropdown-content">
+                            <a href="/registerlogin/login/login.html">Login</a>
+                            <a href="/registerlogin/register/register.html">Register</a>                                            
+                        </div>
+                    </li> -->
+                </ul>
+                <div class="icons-and-menu">
+                    <a href="https://www.facebook.com/profile.php?id=61569570429451&sk=about"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/Kinddonor174779"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/kind.donor/"><i class="fab fa-instagram"></i></a>
+
+                </div>
+                <!-- Hamburger menu for mobile -->
+                <div class="hamburger-menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="causes.html">Our Causes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="payment.html" class="donate-btn">Donate</a></li>
+                    <!-- <li><a href="/registerlogin/login/login.html">Login</a></li>
+                    <li><a href="/registerlogin/register/register.html">Register</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburgerMenu = document.querySelector(".hamburger-menu");
+            const mobileMenu = document.querySelector(".mobile-dropdown-menu");
+
+            // Toggle mobile menu visibility
+            hamburgerMenu.addEventListener("click", () => {
+                mobileMenu.classList.toggle("open");
+            });
+        });
+    </script>
+
+    <main>
+        <section class="causes-intro">
+            <h1>Our Causes</h1>
+            <p>At Kind<span style="color: #f04;">DONOR</span>, we strive to make a difference by focusing on meaningful
+                causes that impact lives positively. Explore our initiatives below.</p>
+        </section>
+
+        <section class="causes-list">
+            <div class="cause">
+                <i class="fas fa-tshirt"></i>
+                <h2><u>Clothing for the Needy</u></h2>
+                <p>In India, countless individuals face life without adequate clothing, enduring extreme weather
+                    conditions. KindDONOR bridges this gap by collecting and distributing new or gently used clothes to
+                    impoverished families, disaster-hit regions, and underserved communities.</p>
+            </div>
+            <div class="cause">
+                <i class="fas fa-utensils"></i>
+                <h2><u>Feeding the Hungry</u></h2>
+                <p>KindDONOR addresses India's hunger crisis by redistributing surplus food and non-perishable donations
+                    to those in need. Through targeted relief efforts, we work to ensure no one goes to bed hungry. Join
+                    us in creating a hunger-free society.</p>
+            </div>
+            <div class="cause">
+                <i class="fas fa-book"></i>
+                <h2><u>Books for Education</u></h2>
+                <p>KindDONOR empowers underprivileged children by providing donated books, stationery, and learning
+                    materials, enabling access to education and breaking the cycle of poverty. Support us in shaping
+                    brighter futures, one donation at a time.</p>
+            </div>
+            <div class="cause">
+                <i class="fa-solid fa-house-chimney-crack"></i>
+                <h2><u>Shelter for the Homeless</u></h2>
+                <p>Homelessness is a pressing issue in both urban and rural areas. KindDONOR collaborates with local
+                    shelters and NGOs to provide bedding, clothing, and hygiene kits, offering safety, dignity, and hope
+                    for a better future.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2><u>Photo & Video Gallery</u></h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="/assets/images/book.jpg" >
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/images/clothes.jpg" >
+                </div>
+                <div class="gallery-item">
+                    <img src="/assets/images/food-1.jpg" >
+                </div>
+
+
+                <div class="gallery-video">
+                    <video controls loop autoplay muted>
+                        <source src="/assets/videos/Untitled video - Made with Clipchamp (4)_Preview_X-Design.mp4" type="video/mp4">            
+                    </video>
+                </div>
+
+                <!-- <div class="gallery-item">
+                    <video controls>
+                        <source src="placeholder-video.mp4" type="video/mp4">
+                        
+                    </video>
+                </div> -->
+            </div>
+
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kind<span style="color: #f04; font-weight: bold;">DONOR</span>. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
